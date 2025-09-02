@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-logo:#2c1c94;
+    --cor-hover:#a8a4c6;
+    
+    --fonte-logo:'LeagueGothic-Regular',Arial, Helvetica, sans-serif;
+    --fonte-padrao:'LeagueSpartan-Bold', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--cor-logo);
+}
+
+nav{
+    background-color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px 15px;
+}
+
+nav ul li button {
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+}
+
+nav ul li button:hover{
+    background-color: var(--cor-hover);
+  
+}
+
+header form #lupa{
+   float:left;
+   margin:3px 0px 0px -20px;
+   cursor:pointer
+}
+
+/* formatação do conteúdo  */
+#lupa:after{
+   font-family:FontAwesome;
+   font-size:14px;
+   content:"\f002"
+}
+
