@@ -14,56 +14,100 @@
 @font-face {
     font-family: 'League-Spartan' ;
     src: url(files/fonts/league-spartan-master/LeagueSpartan-Bold.otf);
+    font-weight: bold;
 }
 @font-face {
     font-family: 'LeagueGothic' ;
     src: url(files/fonts/theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
 }
 
+@font-face {
+    font-family: 'Out League';
+    src: url(files/fonts/out_of_my_league/OutOfMyLeague.ttf);
+}
+
 body{
     background-color: var(--cor-logo);
 }
 
+header{
+    display: inline;
+    
+}
+
 nav{
-    background-color: gray;
+    background-color: white ;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: ;
 }
 
 nav ul li {
-    display:inline;
     color: white;
     list-style: none;
-    justify-content:;
+    margin: 10px 0px 0px 25px;
+    border: none;
+    
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 6px 20px 0px 20px;
     display: block;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 3px 1px 6px 0px black;
+    box-shadow: 3px 1px 6px 0px gray;
     font-family: var(--fonte-padrao);
+    border: none;
+    position: relative;
 }
 
-nav ul li a:hover{
-    background-color: var(--cor-hover);
+
+
+nav form input {
+    margin: 10px 10px 10px 0px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 3px 1px 6px 0px gray;
+    padding: 0px 10px 0px 10px
 }
 
-nav form {
-  
-    justify-content: right;
+
+nav form input::placeholder{
+    font-family: var(--fonte-padrao);
+    font-size: small;
+    text-align: center;
+
+}
+nav form input:focus::placeholder{
+    font-family: var(--fonte-padrao);
+    font-size: small;
+    color: white;
+    
 }
 
-nav form input{
-  
-    justify-content: right;
+form div {
+    padding: 3px;
+    margin:10px 3px 10px 0px;
+    background-color: white;
+    cursor:pointer;
+}
+
+header label form div #lupa{
+   float:left;
+   margin:10px 10px 10px 0px;
+   cursor:pointer;
+}
+
+/* formatação do conteúdo  */
+#lupa:after{
+   font-family:FontAwesome;
+   font-size:14px;
+   content:"\f002"
 }
 
 
