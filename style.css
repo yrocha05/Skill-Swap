@@ -7,8 +7,17 @@
     --cor-logo:#2c1c94;
     --cor-hover:#a8a4c6;
     
-    --fonte-logo:'LeagueGothic-Regular',Arial, Helvetica, sans-serif;
-    --fonte-padrao:'LeagueSpartan-Bold', Arial, Helvetica, sans-serif;
+    --fonte-logo:"LeagueGothic",Arial, Helvetica, sans-serif;
+    --fonte-padrao:"League-Spartan", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'League-Spartan' ;
+    src: url(files/fonts/league-spartan-master/LeagueSpartan-Bold.otf);
+}
+@font-face {
+    font-family: 'LeagueGothic' ;
+    src: url(files/fonts/theleagueof-league-gothic-64c3ede/LeagueGothic-Regular.otf);
 }
 
 body{
@@ -16,45 +25,47 @@ body{
 }
 
 nav{
-    background-color: white;
-    padding: 1rem;
+    background-color: gray;
+    display: flex;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: ;
 }
 
 nav ul li {
-    display: inline;
-    padding: 5px 15px;
+    display:inline;
+    color: white;
+    list-style: none;
+    justify-content:;
 }
 
-nav ul li button {
+nav ul li a {
+    color: black;
     text-decoration: none;
     padding: 5px 20px;
     display: block;
     border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 1px 6px 0px black;
+    font-family: var(--fonte-padrao);
 }
 
-nav ul li button:hover{
+nav ul li a:hover{
     background-color: var(--cor-hover);
+}
+
+nav form {
   
+    justify-content: right;
 }
 
-header form #lupa{
-   float:left;
-   margin:3px 0px 0px -20px;
-   cursor:pointer
+nav form input{
+  
+    justify-content: right;
 }
 
-/* formatação do conteúdo  */
-#lupa:after{
-   font-family:FontAwesome;
-   font-size:14px;
-   content:"\f002"
-}
+
+
 
